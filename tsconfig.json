@@ -1,40 +1,35 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+      "target": "esnext",
+      "module": "esnext",
+      "baseUrl": ".",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "lib": [
+          "esnext",
+          "es5",
+          "es2015.promise",
+          "dom"
+      ],
+      "inlineSourceMap": true,
+      "inlineSources": true,
+      "removeComments": true,
+      "pretty": true,
+      "allowJs": true,
+      "preserveConstEnums": true,
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+          "@/*": [
+              "src/*"
+          ]
+      }
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
+      "src/**/*.ts",
+      "src/**/*.vue",
+      "src/@types/enums.ts"
+, "src/composables/fetchPatientsUpdate.ts"  ],
   "exclude": [
-    "node_modules"
+      "node_modules"
   ]
 }

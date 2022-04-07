@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 interface patient {
   id: number
   first_name: string

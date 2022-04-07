@@ -1,10 +1,10 @@
 import patient from '@/types/patient'
 
 const vacNumber = (data: []) => {
-  const vNum =
+    const vNum =
     Math.max(...data.map((patient: patient) => patient.vaccination_number)) + 1
-  console.log(vNum)
-  return vNum
+    console.log(vNum)
+    return vNum
 }
 
 // const vacUsedList = (data: patient[]) => {
